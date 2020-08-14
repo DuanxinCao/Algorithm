@@ -56,8 +56,8 @@
 //	this.size = 0;
 //}
 //ArrayToQueue::push(int obj) {
-//	if (size == 0)
-//		cout << "队列空了" << endl;
+//	if (size == num.size()-1)
+//		cout << "队列满了" << endl;
 //	else {
 //		size++;
 //		num[last] = obj;
@@ -65,8 +65,8 @@
 //	}
 //}
 //int ArrayToQueue::pop() {
-//	if (size = num.size() - 1) {
-//		cout << "队列满了" << endl;
+//	if (size ==0) {
+//		cout << "队列空了" << endl;
 //		return INT_MIN;
 //	}
 //	else {
