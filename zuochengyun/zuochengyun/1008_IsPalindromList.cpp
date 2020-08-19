@@ -19,7 +19,7 @@
 //	node *nodetmp2 = node1;
 //	while(nodetmp2->next!=NULL&&nodetmp2->next->next!=NULL){	//快慢指针遍历
 //		nodetmp1 = nodetmp1->next;
-//		nodetmp2 = nodetmp2->next;
+//		nodetmp2 = nodetmp2->next->next;
 //	}
 //	nodetmp2 = nodetmp1->next;//右边节点的头指针
 //	nodetmp1->next = NULL;
@@ -42,8 +42,8 @@
 //		nodetmp1 = nodetmp1->next;
 //	}
 //	//恢复原串
-//	nodetmp1 = n3->next;
-//	n3->next = NULL;
+//	nodetmp1 = n3->next; //旧串的头指针
+//	n3->next = NULL;//新串的头指针
 //	while (nodetmp1 != NULL) {
 //		nodetmp2 = nodetmp1->next;
 //		nodetmp1->next = n3;
