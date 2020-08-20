@@ -88,6 +88,7 @@
 //	node* node1 = new Node(5);
 //	node1->next = new Node(3);
 //	node1->next->next = new Node(1);
+//	printList(node1);
 //	node * res=printLinkedList(node1,3);
 //	printList(res);
 //	return 0;
