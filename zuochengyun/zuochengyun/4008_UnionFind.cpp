@@ -23,12 +23,13 @@
 //		rankMap.insert(node, 1);
 //	}
 //}
-//void findFather(Node *node) {
+//Node* findFather(Node *node) {
 //	Node *father = fatherMap.at(*node);
 //	if (father != node) {
 //		father = findFather(father);
 //	}
 //	fatherMap.at(node) = father;
+//  return father
 //}
 //void unionNode(Node* a,Node* b) {
 //	if (a == NULL || b == NULL) {
