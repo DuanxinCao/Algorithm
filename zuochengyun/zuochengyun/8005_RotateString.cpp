@@ -1,4 +1,4 @@
-//给定一个字符串str，和一个整数k，返回str向右循环右移k位后的结 果
+//给定一个字符串str，和一个整数k，返回str向左循环左移k位后的结 果
 //#include <iostream>
 //#include<vector>
 //#include<algorithm>
