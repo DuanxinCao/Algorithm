@@ -29,7 +29,7 @@
 //		father = findFather(father);
 //	}
 //	fatherMap.at(node) = father;
-//  return father
+//  return father;
 //}
 //void unionNode(Node* a,Node* b) {
 //	if (a == NULL || b == NULL) {
@@ -45,6 +45,55 @@
 //		else {
 //			fatherMap.at(fa) = fb;
 //			rankMap.at(fb) = rankMap.at(fb) + rankMap.at(fa);
+//		}
+//	}
+//}
+//int main() {
+//	return 0;
+//}
+
+
+//
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//#include <map>
+//#include <list>
+//using namespace std;
+//typedef struct node {
+//	//whatever 
+//}Node,*linkedList;
+//map<Node *, Node*> fatherMap;
+//map<Node *, int> rankMap;
+//void makeSets(list<Node*> nodes) {
+//	fatherMap.clear();
+//	rankMap.clear();
+//	for (Node* node : nodes) {
+//		fatherMap.insert(pair<Node*,Node *>(node, node));
+//		rankMap.insert(pair<Node *,int>(node, 1));
+//	}
+//}
+//Node* findFather(Node *node) {
+//	Node* father = fatherMap.at(node);
+//	while (node != father) {
+//		father = findFather(node);
+//	}
+//	fatherMap.at(node) = father;
+//	return father;
+//}
+//void unionNode(Node* a,Node* b) {
+//	if (a == nullptr || b == nullptr)
+//		return;
+//	Node* fathera = findFather(a);
+//	Node* fatherb = findFather(b);
+//	if (fathera != fatherb) {
+//		if (rankMap.at(fathera) > rankMap.at(fatherb)) {
+//			fatherMap.at(fatherb) = fathera;
+//			rankMap.at(fathera) = rankMap.at(fathera) + rankMap.at(fatherb);
+//		}
+//		else {
+//			fatherMap.at(fatherb) = fathera;
+//			rankMap.at(fatherb) = rankMap.at(fathera) + rankMap.at(fatherb);
 //		}
 //	}
 //}

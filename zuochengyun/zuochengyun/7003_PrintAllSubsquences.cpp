@@ -37,3 +37,35 @@
 //	printAllSusquence("abc");
 //	return 0;
 //}
+
+
+//
+//#include <iostream>
+//#include<vector>
+//#include<algorithm>
+//
+//using namespace std;
+//string str;
+//int len = 0;
+//void func(string &res, int i) {
+//	if (i == str.size()) {
+//		cout << res << endl;
+//		return;
+//	}
+//		
+//	res.push_back(str[i]);
+//	func(res, i + 1);
+//	res.pop_back();
+//	func(res, i + 1);
+//
+//}
+//void printAllSusquence(string st) {
+//	str = st;
+//	string res;
+//	func(res, 0);
+//}
+//int main() {
+//	len = 3;
+//	printAllSusquence("abc");
+//	return 0;
+//}

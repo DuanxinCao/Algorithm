@@ -15,7 +15,7 @@
 //using namespace std;
 //vector<int> getMaxWindow(vector<int> num, int k) {
 //	vector<int> res;
-//	if (k == 0 || num.empty() || num.size() < 3) {
+//	if (k == 0 || num.empty() || num.size() < k) {
 //		return res;
 //	}
 //	deque<int> qmax;
@@ -43,12 +43,57 @@
 //}
 //int main() {
 //	vector<int> num = {
-//		 4, 3, 5, 4, 3, 3, 6, 7
+//		2,3,4,2,6,2,5,1
 //	};
 //	int k = 3;
 //	vector<int> res = getMaxWindow(num, k);
 //	printVector(res);
 //	return 0;
 //}
-//
-//
+
+
+
+
+//#include <iostream>
+//#include<vector>
+//#include<algorithm>
+//#include <deque>
+//using namespace std;
+//vector<int> getMaxWindow(vector<int> num, int k) {
+//	vector<int> res;
+//	if (num.size() < k)
+//		return res;
+//	deque<int> que;
+//	for (int i = 0; i < num.size(); i++) {
+//		while(!que.empty() && num[i] > num[que.back()]) {
+//			que.pop_back();
+//		}
+//		que.push_back(i);
+//		if (i - que.front() >= k)
+//			que.pop_front();
+//		if (i >= k - 1)
+//			res.push_back(num[que.front()]);
+//	}
+//	return res;
+//}
+//void printVector(vector<int> num) {
+//	if (num.empty()) {
+//		return;
+//	}
+//	for (int a : num) {
+//		cout << a << endl;
+//	}
+//}
+//int main() {
+//	vector<int> num = {
+//		2,3,4,2,6,2,5,1
+//	};
+//	int k = 3;
+//	vector<int> res = getMaxWindow(num, k);
+//	printVector(res);
+//	return 0;
+//}
+
+
+
+

@@ -34,3 +34,37 @@
 //	}
 //	return 0;
 //}
+
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//vector<int> bucketSort(vector<int> num) {
+//	if (num.size()<2) {
+//		return num;
+//	}
+//	int  size = 0;
+//	for (auto i : num) {
+//		if (i > size)
+//			size = i;
+//	}
+//	vector<int> nums(size + 1, 0);
+//	for (auto i:num) {
+//		nums[i]++;
+//	}
+//	int index = 0;
+//	for (int i=0; i < nums.size();i++) {
+//		while (nums[i] > 0) {
+//			nums[i]--;
+//			num[index++] = i;
+//		}
+//	}
+//	return num;
+//}
+//int main() {
+//	vector<int> num = { 8,8,7,7,6,6,5,5,4,3,2,1 };
+//	vector<int> res = bucketSort(num);
+//	for (auto i : res) {
+//		cout << i;
+//	}
+//	return 0;
+//}

@@ -26,3 +26,29 @@
 //}
 //
 //
+
+
+
+
+//#include <iostream>
+//#include<vector>
+//#include<algorithm>
+//#include<limits>
+//using namespace std;
+//int getMax(vector<int> num) {
+//	int maxvalue = INT_MIN;
+//	for (int i : num) {
+//		if (i > maxvalue)
+//			maxvalue = i;
+//	}
+//	return maxvalue - min(num[0], num[num.size() - 1]);
+//}
+//int main() {
+//	vector<int>num={
+//		2,1,8,6
+//	};
+//	cout << getMax(num);
+//	return 0;
+//}
+
+

@@ -25,3 +25,32 @@
 //	cout << getMax(num);
 //	return 0;
 //}
+
+
+
+
+//#include <iostream>
+//#include<vector>
+//#include<algorithm>
+//#include <limits>
+//using namespace std;
+//int getMax(vector<int> num) {
+//	if (num.empty())
+//		return 0;
+//
+//	int cur = num[0];
+//	int res = cur;
+//	for (int i = 1; i < num.size(); i++) {
+//		cur += num[i];
+//		res = max(res, cur);
+//		cur = max(0, cur);
+//	}
+//	return res;
+//}
+//int main() {
+//	vector<int> num = {
+//		3,2,-7,6
+//	};
+//	cout << getMax(num);
+//	return 0;
+//}

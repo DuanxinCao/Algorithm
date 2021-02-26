@@ -9,11 +9,15 @@
 //using namespace std;
 //
 //void sort(vector<int>& str) {
-//	if (str.size() < 2) return;
-//	for (int end = str.size() - 1; end > 0; end--)
-//		for (int i = 0; i < end; i++)
-//			if (str[i] > str[i + 1])
-//				swap(str[i], str[i + 1]);
+//	if (str.size() < 2)
+//		return;
+//	for(int i = str.size()-1; i >0; i--) {
+//		for (int j = 0; j < i; j++) {
+//			if (str[j] > str[j + 1]) {
+//				swap(str[j], str[j+ 1]);
+//			}
+//		}
+//	}
 //}
 //int main() {
 //	vector<int> str = { 7,6,4,5,3,2 };
@@ -22,3 +26,4 @@
 //		cout << i;
 //	return 0;
 //}
+

@@ -24,3 +24,28 @@
 //	printProcess(n);
 //	return 0;
 //}
+
+
+
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//using namespace std;
+//void printProcess(int i, int n, bool down) {
+//	if (i >= n)
+//		return;
+//	printProcess(i + 1, n, true);
+//	if (down)
+//		cout << "down" << endl;
+//	else
+//		cout << "up" << endl;
+//	printProcess(i + 1, n, false);
+//}
+//void printProcess(int n) {
+//	printProcess(0, n, true);
+//}
+//int main() {
+//	int n = 4;
+//	printProcess(n);
+//	return 0;
+//}

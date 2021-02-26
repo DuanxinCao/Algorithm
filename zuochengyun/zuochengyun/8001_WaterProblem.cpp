@@ -38,3 +38,40 @@
 //	cout << getWater(num)<<endl;
 //	return 0;
 //}
+
+
+
+
+
+//#include <iostream>
+//#include<vector>
+//#include<algorithm>
+//
+//using namespace std;
+//int getWater(vector<int> num) {
+//	if (num.size() < 2)
+//		return 0;
+//	int res = 0;
+//	int leftmax = num[0];
+//	int rightmax = num[num.size() - 1];
+//	int l = 1;
+//	int r = num.size() - 2;
+//	while (l <= r) {
+//		if (leftmax < rightmax) {
+//			res += max(0, leftmax - num[l]);
+//			leftmax = max(leftmax, num[l++]);
+//		}
+//		else {
+//			res += max(0, rightmax - num[r]);
+//			rightmax = max(rightmax, num[r--]);
+//		}
+//	}
+//	return res;
+//}
+//int main() {
+//	vector<int> num = {
+//		3,2,1,2,3
+//	};
+//	cout << getWater(num)<<endl;
+//	return 0;
+//}

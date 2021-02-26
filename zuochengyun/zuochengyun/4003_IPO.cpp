@@ -50,3 +50,54 @@
 //	cout << getMaxProfit(2, 2, cost, profit);
 //	return 0;
 //}
+
+//#include <iostream>
+//#include<vector>
+//#include<algorithm>
+//#include<queue>
+//using namespace std;
+//typedef struct Node {
+//	int cost;
+//	int profit;
+//	Node(int cost_, int profit_) :cost(cost_), profit(profit_) {
+//	}
+//}node;
+//struct mincpy {
+//	bool operator()(node &a, node &b) {
+//		return a.cost > b.cost;
+//	}
+//};
+//struct maxprofit {
+//	bool operator()(node& a, node& b) {
+//		return a.profit < b.profit;
+//	}
+//};
+//priority_queue<node, vector<node>, mincpy> minheap;
+//priority_queue<node, vector<node>, maxprofit> maxheap;
+//int getMaxProfit(int k,int money, vector<int> cost, vector<int> profit) {
+//	for (int i = 0; i < cost.size();i++) {
+//		minheap.push(node(cost[i],profit[i]));
+//	}
+//	while (k > 0) {
+//		while (!minheap.empty() && minheap.top().cost<=money) {
+//			maxheap.push(minheap.top());
+//			minheap.pop();
+//		}
+//		if (maxheap.empty())
+//			return money;
+//		money += maxheap.top().profit;
+//		maxheap.pop();
+//		k--;
+//	}
+//	return money;
+//}
+//
+//int main() {
+//
+//	vector<int> cost = { 2,3,6 };
+//	vector<int> profit = { 1,1,2 };
+//	int k = 2;
+//	int money = 2;
+//	cout << getMaxProfit(2, 2, cost, profit);
+//	return 0;
+//}

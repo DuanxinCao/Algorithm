@@ -108,7 +108,7 @@
 //	if (slow == fast) {//~~~~~~
 //		fast = head;
 //		while (fast != slow) {
-//			fast = fast->next->next;
+//			fast = fast->next;
 //			slow = slow->next;
 //		}
 //		return slow;

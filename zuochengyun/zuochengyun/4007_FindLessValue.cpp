@@ -51,3 +51,43 @@
 //	cout << res << " : " << num[res];
 //	return 0;
 //}
+
+
+
+//#include <iostream>
+//#include<vector>
+//#include<algorithm>
+//
+//using namespace std;
+// int findSmallernum(vector<int> num) {
+//	 if (num.size()<2)
+//		 return -1;
+//	 if (num[0] < num[1])
+//		 return 0;
+//	 if (num[num.size() - 1] < num[num.size() - 2])
+//		 return num.size() - 2;
+//	 int left = 0;
+//	 int right = num.size() - 1;
+//	 int mid = left + (right - left) >> 1;
+//	 while (left < right) {
+//		 mid = left + (right - left) >> 1;
+//		 if (num[mid] > num[mid - 1]) {
+//			 right = mid - 1;
+//		 }
+//		 else if (num[mid] > num[mid + 1]) {
+//			 left = mid + 1;
+//		 }
+//		 else {
+//			 return mid;
+//		 }
+//	 }
+//	 return left;
+//}
+//int main() {
+//	vector<int> num = {
+//		9,8,6,8,9
+//	};
+//	int res=findSmallernum(num);
+//	cout << res << " : " << num[res];
+//	return 0;
+//}

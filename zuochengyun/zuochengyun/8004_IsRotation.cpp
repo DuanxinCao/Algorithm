@@ -63,3 +63,64 @@
 //}
 //
 //
+
+
+
+
+
+//#include <iostream>
+//#include<vector>
+//#include<algorithm>
+//
+//using namespace std;
+//vector<int> getNext(string str) {
+//	vector<int> res(str.size(), 0);
+//	res[0] = -1;
+//	res[1] = 0;
+//	int cn = 0;
+//	int pos = 2;
+//	while (pos < str.size()) {
+//		if (res[pos - 1] == res[cn]) {
+//			res[pos++] = ++cn;
+//		}
+//		else if(cn>0){
+//			cn = res[cn];
+//		}
+//		else {
+//			res[pos++] = 0;
+//		}
+//	}
+//	return res;
+//}
+//int getIndex(string a, string b) {
+//	int res;
+//	vector<int> next = getNext(b);
+//	int indexa = 0;
+//	int indexb = 0;
+//	while (indexa < a.size() && indexb < b.size()) {
+//		if (a[indexa] == b[indexb]) {
+//			indexa++;
+//			indexb++;
+//		}
+//		else if (next[indexb] == -1) {
+//			indexa++;
+//		}
+//		else {
+//			indexb = next[indexb];
+//		}
+//	}
+//	return (indexb == b.size()) ? indexb : -1;
+//
+//}
+//bool ifQueal(string a, string b) {
+//	if (a.empty() || a.size() != b.size())
+//		return false;
+//	string c = a + a;
+//	int index=getIndex(c, b);
+//	return index >= 0 ? true : false;
+//}
+//int main() {
+//	cout << ifQueal("abc", "bca");
+//	return 0;
+//}
+

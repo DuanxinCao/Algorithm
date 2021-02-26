@@ -47,3 +47,48 @@
 //	}
 //	return 0;
 //}
+
+//#include <iostream>
+//#include <vector> 
+//using namespace std;
+//void mSort(vector<int>& num, int left, int mid, int right) {
+//	vector<int> numtmp(right - left + 1, 0);
+//	int index = 0;
+//	int lefttmp = left;
+//	int righttmp = mid+1;
+//	while (lefttmp <= mid && righttmp <= right) {
+//		numtmp[index++] = num[lefttmp] <= num[righttmp] ? num[lefttmp++] : num[righttmp++];
+//	}
+//	while (lefttmp <= mid) {
+//		numtmp[index++] = num[lefttmp++];
+//	}
+//	while (righttmp <= right) {
+//		numtmp[index++] = num[righttmp++];
+//	}
+//	for (int i = 0; i < numtmp.size(); i++) {
+//		num[left + i] = numtmp[i];
+//	}
+//}
+//void mergeSort(vector<int>& num, int left, int right) {
+//	if (left == right)
+//		return;
+//	int mid = left + ((right - left) >> 1);
+//	mergeSort(num, left, mid);
+//	mergeSort(num, mid + 1, right);
+//	mSort(num, left, mid, right);
+//}
+//vector<int> mergeSort(vector<int> num) {
+//	if (num.size() < 2) {
+//		return num;
+//	}
+//	mergeSort(num, 0, num.size()-1);
+//	return num;
+//}
+//int main() {
+//	vector<int> num = {6,5,4,3,2,1};
+//	vector<int> res = mergeSort(num);
+//	for (int i = 0; i < num.size(); i++) {
+//		cout << res[i] << " ";
+//	}
+//	return 0;
+//}

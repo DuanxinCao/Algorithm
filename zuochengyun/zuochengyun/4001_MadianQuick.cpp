@@ -45,9 +45,73 @@
 //		return max;
 //	int min = minHeap.top();
 //	if ((maxHeap.size() + minHeap.size()) % 2 == 0)
-//		return (max + min) % 2;
+//		return (max + min) / 2;
 //	return maxHeap.size() > minHeap.size() ? max : min;
 //}
+//
+//
+//int main() {
+//	insert(1);
+//	cout << getmedian() << endl;
+//	insert(2);
+//	cout << getmedian() << endl;
+//	insert(3);
+//	cout << getmedian() << endl;
+//	return 0;
+//}
+
+//
+//#include <iostream>
+//#include<vector>
+//#include<algorithm>
+//#include<queue>
+//using namespace std;
+//priority_queue<int, vector<int>, less<int>> maxheap;
+//priority_queue<int, vector<int>, greater<int>> minheap;
+//
+//void insert(int num) {
+//	if (maxheap.empty())
+//		maxheap.push(num);
+//	else if (num <=maxheap.top()) {
+//		maxheap.push(num);
+//	}
+//	else {
+//		if (minheap.empty()) {
+//			minheap.push(num);
+//		}
+//		else if (num <= minheap.top())
+//			maxheap.push(num);
+//		else
+//			minheap.push(num);
+//	}
+//	if (maxheap.size() - minheap.size() == 2) {
+//		minheap.push(maxheap.top());
+//		maxheap.pop();
+//	}
+//	else if (minheap.size() - maxheap.size() == 2) {
+//		maxheap.push(minheap.top());
+//		minheap.pop();
+//	}
+//}
+//int getmedian() {
+//	if (maxheap.empty())
+//		return 0;
+//	else if (minheap.empty())
+//		return maxheap.top();
+//	else {
+//		int maxheaptop = maxheap.top();
+//		int minheaptop = minheap.top();
+//		if (maxheap.size() > minheap.size())
+//			return maxheaptop;
+//		else if (maxheap.size() < minheap.size())
+//			return minheaptop;
+//		else {
+//			return (minheaptop + maxheaptop) / 2;
+//		}
+//	}
+//}
+//
+//
 //int main() {
 //	insert(1);
 //	cout << getmedian() << endl;
