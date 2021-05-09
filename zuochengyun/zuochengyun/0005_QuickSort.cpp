@@ -52,22 +52,22 @@
 //void quickSort(vector<int>& num, int left, int right) {
 //	if (left >= right)
 //		return;
-//	int tmp = num[left];
 //	int lefttmp = left;
 //	int righttmp = right;
-//	while (lefttmp < righttmp) {
+//	int tmp = num[left];
+//	while (lefttmp <righttmp) {
 //		while (lefttmp < righttmp && num[righttmp] >= tmp)
 //			righttmp--;
-//		if (lefttmp < righttmp)
-//			num[lefttmp] = num[righttmp];
+//		if(lefttmp < righttmp)
+//			num[lefttmp++] = num[righttmp];
 //		while (lefttmp < righttmp && num[lefttmp] <= tmp)
 //			lefttmp++;
-//		if (lefttmp < righttmp)
-//			num[righttmp] = num[lefttmp];
+//		if(lefttmp < righttmp)
+//			num[righttmp--] = num[lefttmp];
 //	}
 //	num[righttmp] = tmp;
-//	quickSort(num, left, righttmp - 1);
-//	quickSort(num, righttmp + 1,right);
+//	quickSort(num,left,righttmp-1);
+//	quickSort(num, righttmp + 1, right);
 //}
 //vector<int> quickSort(vector<int> num) {
 //	if (num.empty())
@@ -83,3 +83,5 @@
 //	}
 //	return 0;
 //}
+
+

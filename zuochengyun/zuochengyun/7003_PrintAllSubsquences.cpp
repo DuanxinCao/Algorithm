@@ -1,7 +1,8 @@
-////打印一个字符串的全部子序列，包括空字符串
+//打印一个字符串的全部子序列，包括空字符串
 //#include <iostream>
 //#include<vector>
 //#include<algorithm>
+//#include <string>
 //
 //using namespace std;
 //vector<char> str;
@@ -24,6 +25,21 @@
 //	func(res, i + 1);
 //
 //}
+//void func2(string& str, int cur,string s) {
+//	if (cur >= str.size()&&!s.empty()) {
+//		cout << s << endl;
+//	}
+//	if (cur >= str.size()) {
+//		return;
+//	}
+//	else {
+//		if (s.find(str[cur]) == string::npos) {
+//			func2(str, cur + 1, s + str[cur]);
+//		}
+//		func2(str, cur + 1, s);
+//	}
+//
+//}
 //void printAllSusquence(string st) {
 //	
 //	for (char c : st) {
@@ -35,6 +51,8 @@
 //int main() {
 //	len = 3;
 //	printAllSusquence("abc");
+//	string str = "aabc";
+//	func2(str, 0, "");
 //	return 0;
 //}
 

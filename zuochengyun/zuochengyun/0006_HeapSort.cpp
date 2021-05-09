@@ -56,47 +56,45 @@
 //#include <iostream>
 //#include <vector>
 //using namespace std;
-//void heapSort(vector<int>& num, int size) {
+//void heapsort(vector<int>& num, int size) {
 //	int index = 0;
-//	int left = 2 * index + 1;
+//	int left = 1;
 //	while (left <= size) {
 //		int big = left;
-//		if (left + 1 <= size && num[left + 1] > num[left]) {
+//		if (left + 1 <= size && num[left + 1] > num[left])
 //			big = left + 1;
-//		}
-//		if (num[index] < num[big]) {
-//			swap(num[index], num[big]);
+//		if (num[big] > num[index]) {
+//			swap(num[big], num[index]);
 //			index = big;
 //			left = 2 * index + 1;
 //		}
-//		else {
+//		else
 //			break;
-//		}
 //	}
 //}
-//void heapInsert(vector<int>& num, int index) {
-//	while (num[(index - 1) / 2] < num[index]) {
-//		swap(num[(index - 1) / 2], num[index]);
-//		index = (index - 1) / 2;
+//void heapinsert(vector<int>& num, int index) {
+//	while (num[index] > num[index / 2]) {
+//		swap(num[index],num[index/2]);
+//		index /= 2;
 //	}
 //}
-//vector<int> heapSort(vector<int> num) {
+//vector<int> heapsort(vector<int> num) {
 //	if (num.size() < 2)
 //		return num;
 //	for (int i = 0; i < num.size(); i++) {
-//		heapInsert(num, i);
+//		heapinsert(num, i);
 //	}
-//	swap(num[0], num[num.size() - 1]);
-//	for (int i = num.size() - 2; i >= 0; i--) {
-//		heapSort(num, i);
-//		swap(num[0], num[i]);
+//	swap(num[0],num[num.size()-1]);
+//	for(int j = num.size() - 2; j > 0; j--) {
+//		heapsort(num,j);
+//		swap(num[0], num[j]);
 //	}
 //	return num;
 //	
 //}
 //int main() {
 //	vector<int> num = {4,5,6,1,2,3};
-//	vector<int> res = heapSort(num);
+//	vector<int> res = heapsort(num);
 //	for (int i = 0; i < res.size(); i++) {
 //		cout << res[i];
 //	}

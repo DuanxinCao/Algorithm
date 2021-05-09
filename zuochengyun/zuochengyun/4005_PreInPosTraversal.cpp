@@ -14,10 +14,9 @@
 //}Node,*ListNode;
 //stack<Node*> treeStack;
 //void preOrder(Node* head) {
-//	if (head == NULL) {
+//	if (head == NULL)
 //		return;
-//	}
-//	cout << head->data<<endl;
+//	cout << head->data<endl;
 //	preOrder(head->left);
 //	preOrder(head->right);
 //}
@@ -38,23 +37,25 @@
 //	cout << head->data << endl;
 //}
 //void preOrder2(Node* head) {
-//	if (head == NULL) {
+//	if (head == NULL)
 //		return;
-//	}
-//	treeStack.push(head);
-//	while (!treeStack.empty()) {
-//		//每次取栈顶元素，进行判断是否已经遍历他的左右子树
-//		Node *tmp = treeStack.top();
-//		treeStack.pop();
-//		if (tmp != nullptr) {
-//			if (tmp->right) treeStack.push(tmp->right);
-//			if (tmp->left) treeStack.push(tmp->left);
-//			treeStack.push(tmp);
-//			treeStack.push(nullptr);
+//	stack<Node*> sta;
+//	sta.push(head);
+//	while (!sta.empty()) {
+//		Node* node = sta.top();
+//		sta.pop();
+//		if (node == NULL) {
+//			cout << sta.top()->data << endl;
+//			sta.pop();
 //		}
 //		else {
-//			cout << treeStack.top()->data<< endl;
-//			treeStack.pop();
+//			if (node->right != NULL)
+//				sta.push(node->right);
+//			if (node->left != NULL) {
+//				sta.push(node->left);
+//			}
+//			sta.push(node);
+//			sta.push(NULL);
 //		}
 //	}
 //}
@@ -159,22 +160,22 @@
 //void preOrder2(Node* head) {
 //	if (head == NULL)
 //		return;
-//	treeStack.push(head);
-//	while (!treeStack.empty()) {
-//		Node* tmp = treeStack.top();
-//		treeStack.pop();
-//		if (tmp != NULL) {
-//			if (tmp->right != nullptr)
-//				treeStack.push(tmp->right);
-//			if (tmp->left!= nullptr) {
-//				treeStack.push(tmp->left);
-//			}
-//			treeStack.push(tmp);
-//			treeStack.push(nullptr);
+//	stack<Node*> sta;
+//	sta.push(head);
+//	while (!sta.empty()) {
+//		Node* node = sta.top();
+//		sta.pop();
+//		if (node != nullptr) {
+//			if (node->right != NULL)
+//				sta.push(node->right);
+//			if (node->left != NULL)
+//				sta.push(node->left);
+//			sta.push(node);
+//			sta.push(nullptr);
 //		}
 //		else {
-//			cout << treeStack.top()->data <<endl;
-//			treeStack.pop();
+//			cout << sta.top() << endl;
+//			sta.pop();
 //		}
 //	}
 //}

@@ -47,6 +47,7 @@
 //	}
 //	return dp[weight];
 //}
+
 //int main() {
 //	vector<int> v = {
 //		3, 2, 4, 7
@@ -56,13 +57,13 @@
 //	};
 //	int weight = 11;
 //
-//	cout << dp(v,w,11) << endl;
+//	//cout << dp(v,w,11) << endl;
 //	cout << dp2(v,w,11) << endl;
-//	cout << dp3(v,w,11) << endl;
+//	//cout << dp3(v,w,11) << endl;
 //	return 0;
 //}
 
-//
+
 //#include <iostream>
 //#include<vector>
 //#include<algorithm>
@@ -82,22 +83,24 @@
 //	}
 //	return res[0][0];
 //}
+
 //int dp2(vector<int> v, vector<int> w, int weight) {
 //	vector<vector<int>> dp(v.size(), vector<int>(weight + 1, 0));
-//	if (w[0] <= weight) {
-//		for (int i = w[0]; i < weight; i++) {
+//	if (w[0] < weight) {
+//		for (int i = w[0]; i < weight + 1; i++) {
 //			dp[0][i] = v[0];
 //		}
 //	}
-//	for (int i = 1; i < v.size(); i++) {
-//		for (int j = 0; j <= weight; j++) {
+//	for (int i = 1; i < w.size(); i++)
+//	{
+//		for (int j = 0; j < weight + 1; j++) {
 //			dp[i][j] = dp[i - 1][j];
 //			if (w[i] <= j) {
-//				dp[i][j] = max(dp[i][j], dp[i - 1][j - w[i]] + v[i]);
+//				dp[i][j] = max(dp[i][j],dp[i - 1][j - w[i]] + v[i]);
 //			}
 //		}
 //	}
-//	return dp[v.size() - 1][weight];
+//	return dp[w.size() - 1][weight];
 //}
 ////一维数组时，内循环必须逆序，因为在考虑到某个元素时，可能将该元素考虑多次
 //int dp3(vector<int> v, vector<int> w, int weight) {
@@ -116,8 +119,8 @@
 //	};
 //	int weight = 11;
 //
-//	cout << dp(v, w, 11) << endl;
+//	//cout << dp(v, w, 11) << endl;
 //	cout << dp2(v, w, 11) << endl;
-//	cout << dp3(v, w, 11) << endl;
+//	//cout << dp3(v, w, 11) << endl;
 //	return 0;
 //}
